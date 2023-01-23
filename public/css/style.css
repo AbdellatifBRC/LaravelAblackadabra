@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: calibri;
+}
+header {
+position: relative;}
+.navbar {
+/*display: flex;
+justify-content: space-between;
+align-items: center;*/
+background-image:linear-gradient(45deg, rgb(167, 116, 67) 0%, rgb(195, 152, 104) 100%);
+padding:10px 0px;
+font-family: 'Roboto', sans-serif;
+position: relative;
+/*min-height: 100px;*/
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav img {width: 150px;}
+nav li{
+    margin: 0 8px;
+    white-space: nowrap;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+    position:relative;
+    border-bottom: 3px solid transparent;}
+
+nav li a:hover{ 
+    border-bottom: 3px solid #55595c;  
+    color: rgba(255, 255, 255, 0.8);
+}
+nav a:before{
+    content: '';
+    position:absolute;
+    left: 25%;
+    top: 100%;
+    width: 50%;
+    height: 2px;
+    background: #555;
+    transition: .3s;
+    opacity: 0;
+}
+.navbar nav li a:hover{
+    border-bottom: 0px solid #000;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 1s ease-in-out;
+}
+.navbar nav li a:hover:before{
+    width: 100%;
+    left :0;
+    opacity: 1;
+    transition: .3s;
+}
+    .nav-sm {
+        background-image:linear-gradient(45deg, rgb(167, 116, 67) 0%, rgb(195, 152, 104) 100%);
+        text-align: center;
+    }
+/*.popup-hide { position: fixed;
+    filter: drop-shadow(0 0 500px rgb(0, 0, 0));
+    padding: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 150ms ease-in-out;
+    border: solid 1px #ededed;
+    border-radius: 0px;
+    z-index: +100;
+    background-image:linear-gradient(45deg, rgb(167, 116, 67) 0%, rgb(195, 152, 104) 100%);
+    min-width: 90%;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }*/
+.globe{
+    color: rgba(255, 255, 255, 0.7);
+}
+.menu-item{
+    display: none;
+    color: #fff;
+}
+/*section1*/
+.section1{position: relative;}
+.present{
+align-self: auto;
+position: relative;
+width: 100%;
+min-height: 600px;
+overflow: hidden;
+display: flex;
+font-family: 'Roboto', sans-serif;
+background: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) );
+}
+.present video{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.present .card1{
+    z-index: +98;
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    padding: 3rem 4rem;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: +99;
+}
+.present .card1 h1{
+    font-size: 50px;
+}
+.present .card1 p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.section1-btn a{
+    border-radius: 30px;
+    background: #5d372e;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 22px;
+    margin: 20px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*.section1-text-container{
+    position: relative;
+}*/
+.overlay {
+/*overlay to change linear gradient colors */ 
+background-color: rgba(0, 0, 0, 0);
+background-image: linear-gradient(rgba(28, 28, 28, 0.09) 0%, rgb(28, 28, 28) 100%);
+color: rgb(237, 241, 252);
+position: absolute;
+font-family: "Barlow", sans-serif;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: +98;
+opacity:1;
+}
+/* end section 1*/
+/* section 2*/
+.section2{
+    /*align-self: auto;*/
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgb(167, 116, 67) 0%, rgb(195, 152, 104) 100%);
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    position: relative;
+    /*padding: 0px 30px 50px 30px;*/
+    color: rgb(237, 241, 252);
+    /*max-width: 100%;*/
+}
+.section2-element-container {
+    position: relative;
+    /*display: flex;
+    flex-wrap: nowrap;*/
+    /*margin-left: 100px;
+    margin-right: 100px;*/
+}
+.section2-text-container {
+    /*align-content: flex-start;
+    align-items: flex-start;
+    width: 640px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: auto;*/
+    position: relative;
+    padding-right: 75px;
+    padding-top: 75px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+}
+.section2-text1{
+    margin-bottom: 20px;
+    font-family: "Barlow", sans-serif;  
+}
+.section2-text1 h2 {
+    line-height: 17px;
+    letter-spacing: 2px;
+    color:rgb(90, 58, 34);
+    font-family: "Heebo", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    outline-color:rgb(90, 58, 34) ;
+    outline-style: none;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: baseline;
+}
+.section2-text2{
+   margin-bottom: 20px;
+   font-family: "Barlow", sans-serif;
+}
+.section2-text2 h2 {
+    line-height: 46.2px;
+    letter-spacing: normal;
+    color:white;
+    font-family: "Heebo", sans-serif;
+    font-size: 42px;
+    font-weight:700;
+    font-style: normal;
+    outline-color:white ;
+    outline-style: none;
+    text-align: left;
+    vertical-align: baseline;
+}
+.section2-text3{
+    margin-bottom: 20px;
+    font-family: "Barlow", sans-serif;
+ }
+ .section2-text3 h2 {
+    line-height: 23.1px;
+    letter-spacing: normal;
+    color:white;
+    font-family: "Heebo", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    outline-color:white ;
+    outline-style: none;
+    text-align: left;
+    vertical-align: baseline;
+}
+.section2-text4{
+    align-content:normal;
+    align-items: normal;
+    align-self: auto;
+    margin-bottom: 20px;
+    font-family: "Barlow", sans-serif;
+ }
+ .section2-text4 h2 {
+    line-height: 23.1px;
+    letter-spacing: normal;
+    color:white;
+    font-family: "Heebo", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    font-style: normal;
+    outline-color:white ;
+    outline-style: none;
+    text-align: left;
+    vertical-align: baseline;
+}
+.section2-text5{
+    align-content:normal;
+    align-items: normal;
+    align-self: auto;
+    font-family: "Barlow", sans-serif;
+ }
+ .text5-p {
+    line-height: 24px;
+    letter-spacing: normal;
+    color:white;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    outline-color:white ;
+    outline-style: none;
+    text-align: left;
+    
+}
+.section2-img-container {
+    /*width: 640px;
+    max-width: 100%;
+    display: flex;
+    flex-basis: auto;*/
+    position: relative;
+}
+.section2-img-subcontainer{
+   /* display: flex;
+    align-content: flex-start;
+    align-items: flex-start;*/
+    margin-top:-100px;
+    position: relative;
+    z-index: +99;
+   
+    
+}
+.section2-img-subcontainer img {
+    display: inline-block;
+    vertical-align: middle;      
+}
+
+
+/* end section2 */
+/*section3*/
+.section3{
+position: relative;
+
+}
+.section3-element-container {
+/*display: flex;
+flex-wrap: nowrap;*/
+/*margin-right: 128px;
+margin-left: 128px;*/
+position: relative;
+}
+.section3-text-container {
+/*align-items: center;
+align-content: center;
+display: flex;
+flex-wrap:wrap ;
+width: 640px;
+max-width: 100%;*/
+padding-top: 25px;
+padding-bottom:50px ;
+padding-left: 50px;
+padding-right: 100px;
+color: white;
+}
+
+.section3-text1{
+    /*width: 490px;*/
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.section3-text1 h2 {
+    font-family: "Heebo", sans-serif;
+    line-height: 33px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.section3-text2{
+    /*width: 490px;*/
+    position: relative;
+    text-align: left
+}
+.section3-text2 ul {
+    line-height: 24px;
+    /*margin-bottom: 27px;
+    margin-left: 54px;*/
+    vertical-align: baseline;
+    text-align: left;
+}
+.section3-text2 ul li {
+    list-style-type:disc;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+.section3-img-container {
+/*display: flex;
+width: 640px;*/
+position: relative;
+}
+.section3-img-subcontainer {
+ /* display: flex;
+  flex-wrap: nowrap; */
+  position: relative; 
+  /*width: 640px;*/
+}
+.section3-img-subcontainer img {
+    display: inline-block;
+    /*height: 960px;*/
+    vertical-align: middle;
+    /*max-width: 100%;*/
+}
+/*end section3*/
+/*section4*/
+.section4{
+    position: relative;   
+    }
+    .section4-element-container {
+    /*display: flex;
+    flex-wrap: nowrap;
+    margin-right: 128px;
+    margin-left: 128px;*/
+    position: relative;
+    }
+    .section4-text-container {
+    /*align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap:wrap ;
+    width: 640px;
+    max-width: 100%;*/
+    color: white;
+    padding-top: 25px;
+    padding-bottom:50px ;
+    padding-left: 50px;
+    padding-right: 100px;
+    }
+    
+    .section4-text1{
+        /*width: 490px;*/
+        position: relative;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .section4-text1 h2 {
+        font-family: "Heebo", sans-serif;
+        line-height: 33px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .section4-text2{
+       /* width: 490px;*/
+        position: relative;
+    }
+    .section4-text2-p{
+       font-family: "Barlow", sans-serif;
+       font-size: 18px;
+       font-weight: 400;
+       line-height: 24px;
+    }
+    .section4-text2 ul {
+        line-height: 24px;
+        margin-bottom: 27px;
+        margin-left: 54px;
+        vertical-align: baseline;
+        text-align: left;
+    }
+    .section4-text2 ul li {
+        list-style-type:disc;
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+    }
+    .section4-img-container {
+    /*display: flex;
+    width: 640px;*/
+    position: relative;
+    }
+    .section4-img-subcontainer {
+     /* display: flex;
+      flex-wrap: nowrap; */
+      position: relative; 
+      /*width: 640px;*/
+    }
+    .section4-img-subcontainer img {
+        display: inline-block;
+        /*height: 960px;*/
+        vertical-align: middle;
+        /*max-width: 100%;*/
+    }
+    /*end section4*/
+    
+    /*section5*/
+    .section5{
+    position: relative;
+    
+    }
+    .section5-element-container {
+    /*display: flex;
+    flex-wrap: nowrap;
+    margin-right: 128px;
+    margin-left: 128px;*/
+    position: relative;
+    }
+    .section5-text-container {
+   /* align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap:wrap ;
+    width: 640px;
+    max-width: 100%;*/
+    color: white;
+    padding-top: 25px;
+    padding-bottom:50px ;
+    padding-left: 50px;
+    padding-right: 100px;
+    }
+    
+    .section5-text1{
+        /*width: 490px;*/
+        position: relative;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .section5-text1 h2 {
+        font-family: "Heebo", sans-serif;
+        line-height: 33px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .section5-text2{
+        /*width: 490px;*/
+        position: relative;
+    }
+   
+    .section5-text2 ul {
+        line-height: 24px;
+        margin-bottom: 27px;
+        /*margin-left: 54px;*/
+        vertical-align: baseline;
+        text-align: left;
+    }
+    .section5-text2 ul li {
+        list-style-type:disc;
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+    }
+    .section5-img-container {
+   /* display: flex;
+    width: 640px;*/
+    position: relative;
+    }
+    .section5-img-subcontainer {
+      /*display: flex;
+      flex-wrap: nowrap;*/ 
+      position: relative; 
+      /*width: 640px;*/
+    }
+    .section5-img-subcontainer img {
+        display: inline-block;
+        /*height: 960px;*/
+        vertical-align: middle;
+        /*max-width: 100%;*/
+    }
+    /*end section5*/
+    /*section6*/
+    .section6{
+        position: relative;
+        background-image: linear-gradient(rgb(167, 116, 67) 0%, rgb(195, 152, 104) 100%);
+        padding: 32px 16px 32px 16px;
+    }
+    .section6-element-container{
+        /*display: flex;
+        flex-wrap: nowrap;*/
+        position: relative;
+        /*margin-left: 112px;
+        margin-right: 112px;*/
+    }
+    .section6-text-container {
+        /*align-items: center;
+        align-content: center;
+        display: flex;
+        flex-wrap:wrap ;
+        width: 640px;
+        max-width: 100%;*/
+        padding-top: 0px;
+        padding-bottom:0px ;
+        padding-left: 14px;
+        padding-right: 14px;
+        }
+    .section6-text-subcontainer {
+        /*padding: 10px;*/
+        display: block;
+        background-color: rgb(167, 116, 67);
+        border-radius: 5px;
+        box-shadow: rgba(0, 9, 78, 0.18) 0px 25px 35px 0px;
+        /*width: 608px;
+        height: 398px;*/
+        padding: 40px;
+    }
+    .section6-text-subcontainer h4 {
+      color:  rgb(90, 58, 34);
+      font-family: "Heebo", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      vertical-align: baseline;
+      line-height: 21.6px;
+    }
+    .section6-text-subcontainer h2 {
+        color: white;
+        font-family: "Heebo", sans-serif;
+        font-size: 42px;
+        font-weight: 500;
+        vertical-align: baseline;
+        line-height: 50.4px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    .section6-text-subcontainer p {
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        vertical-align: baseline;
+    }
+    .section6-text-subcontainer a {
+      background-color:rgb(90, 58, 34) ;  
+      border-radius: 100px 100px 0px 100px;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 10px;
+      padding: 12px 30px 12px 70px;
+      text-align: left;
+      position: relative;
+    }
+    .section6-text-subcontainer a:hover {
+        background-color:white;  
+        color:rgb(90, 58, 34);
+        transition: all 0.5s ease-in;
+    }
+    .section6-text-subcontainer a span {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 50%;
+        background-color: white;
+        color: rgb(90, 58, 34);
+        font-size: 20px;
+        font-weight: 900;
+        height: 51px;
+        width: 50px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+    }
+    .section6-img-container {
+        /*display: flex;
+        width: 640px;*/
+        margin-bottom: 10px;
+        position: relative;
+        }
+    .section6-img-subcontainer {
+        /* display: flex;
+        flex-wrap: nowrap; */
+        position: relative; 
+        /* width: 640px;*/
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .section6-img-subcontainer img {
+        display: inline-block;
+        /*height: 426px;*/
+        vertical-align: middle;
+        /* max-width: 100%;*/
+        transition: transform .4s ease;
+        
+    }
+    .section6-img-subcontainer img:hover {
+        transform: scale(1.1);
+        
+    }
+    /*end section6*/
+    /*section8*/
+    /*.section-8{
+        position: relative;
+    }
+    .section8-element-container {
+        position: relative;
+    }
+    .element-last {
+        min-height:580px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('images/portrait-medium-shot-of-a-young-black-couple-looking-at-each-other-smiling.jpg');
+        background-size: cover ;
+        position: relative;
+   }
+    .section8-text-container {
+        /*width: 500px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+   }
+    .section8-text-container p{
+        color: #fd7601;
+        font-size: 18px;
+   }
+    .section8-text-container h1{
+        font-size: 50px;
+        margin: 20px 0;
+        opacity: 0.4;
+   }
+    .section8-text-container h4{
+        font-size: 22px;
+        margin: 30px 0;
+   }*/
+    /*sectio8 end*/
+    /*section8*/
+    .section8 {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('images/portrait-medium-shot-of-a-young-black-couple-looking-at-each-other-smiling.jpg');
+        background-size: cover ;
+        position: relative;
+        padding: 8%;
+        background-position: center;
+    }
+    .section8-text-container {
+    
+    color: #fff;
+    max-width: 100%;
+    position: relative;  
+    
+    }
+    .section8-text-container p{
+        color: #fd7601;
+        font-size: 18px;
+        font-family: "Heebo", sans-serif;
+        word-spacing: 2px;
+        font-weight: 600;
+    }
+    .section8-text-container h1{
+        font-size: 50px;
+        font-weight: 600;
+        margin: 20px 0;
+        opacity: 0.6;
+        font-family: "Heebo", sans-serif;
+    }
+    .section8-text-container h4{
+        font-size: 22px;
+        margin: 30px 0;
+        font-family: "Heebo", sans-serif;
+    }
+    /*sectio8 end*/
+    /*footer*/
+    /*footer{
+       
+        background-image:linear-gradient(135deg,rgba(170,120,71,1) 0%,rgba(192,148,100,1) 100%);
+        padding:80px 40px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+   }
+    footer .items{
+        width: 400px;
+   }
+    footer .items h1{
+        margin: 20px 0;
+   }
+    footer .items h6{
+        line-height: 22px;
+        font-size: 18px;
+   }
+    footer .items h3{
+        margin: 10px 0;
+   }
+    footer .items h5{
+       margin: 10px 0;
+        font-size: 22px;
+   }
+    footer .items p{
+        font-size: 18px;
+        margin: 10px 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: bold;
+        line-height: 24px;
+   }*/
+   /*footer*/
+    footer{     
+    background-image:linear-gradient(135deg,rgba(170,120,71,1) 0%,rgba(192,148,100,1) 100%);
+    padding:60px 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    }
+    .first-part h1{
+       font-family:  "Heebo", sans-serif;
+       font-size: 24px;
+       font-weight: 700;
+       margin: 20px 0px;
+   }
+   .first-part p {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+   }
+    .second-part h3{
+        font-family: "Heebo", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+   }
+   .second-part h4{
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+   }
+   .second-part h5{
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+   }
+   .second-part p{
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+   }
+    .third-part h6 {
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    }
+    .third-part p {
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    }
+   /*footer end*/
+   .section9 {
+    background-image: linear-gradient(rgb(167, 116, 67) 0%, rgb(195, 152, 104) 100%);
+
+   }
+   .section9 p {float: right;}
+   /*background img*/
+   body{  
+    background-image:linear-gradient(0deg, rgb(90, 58, 34,0.6),rgb(90, 58, 34,0.6)),url("/images/young-african-woman-listening-music-with-headphones-outdoors-in-the-city-focus-on-face.jpg") ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+   }
+   .sections-container {max-width: 100%;}
+   

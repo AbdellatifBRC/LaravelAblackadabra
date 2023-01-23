@@ -1,0 +1,91 @@
+.bg-marron{
+    background-color: #bc8f5f;
+}
+.color-w{
+    color: white;
+}
+.color-hov{
+    fill: #ffffffba;
+    transition: all 0.5s ease;
+}
+.color-hov:hover{
+    fill: white;
+    height: 50px;
+}
+.nav-item li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    color: white;
+    text-decoration: none;
+  }
+.nav-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+.nav-item li a::after {
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #6b6b6b;
+  width: 0%;
+  content: "";
+  height: 2px;
+  transition: all 0.5s;
+  }
+
+.nav-item  li a:hover::after,
+.nav-item  li a:focus::after{
+    transform: scale(1);
+    width: 100%;
+  }
+
+@media (max-width:768px) {
+    .language-btn-section{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+    .logo-section{
+        margin-left: 50vw;
+    }
+    .nav-section{
+        justify-content: end;
+    }
+
+}
+
+.first-section{
+    position: relative;
+    padding: 16em 1em 10em 1em;
+}
+.first-section .video-background{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    direction: ltr;
+}
+.overlay-gradian{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#1C1C1C17 0%,#1C1C1C 100%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+    transition-property: background, border-radius, opacity;
+}
+.first-section .overlay-gradian{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    direction: ltr;
+}
